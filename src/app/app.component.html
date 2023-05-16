@@ -1,0 +1,12 @@
+<main>
+  <mat-toolbar>
+    <span>Chat GPT</span>    
+  </mat-toolbar>
+<section class="content">
+  
+  <app-search-bar></app-search-bar>
+  <span *ngIf="storyDTO">Text: {{storyDTO.story}}</span>
+  <img *ngIf="storyDTO" [src]="storyDTO.imageURL">
+</section>
+</main>
+<router-outlet></router-outlet>
